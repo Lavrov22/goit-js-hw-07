@@ -1,8 +1,8 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-const galletyRef = document.querySelector('.gallery');
-console.log(galletyRef);
+const galleryRef = document.querySelector('.gallery');
+console.log(galleryRef);
 
 
 const markup = galleryItems.map(({ original, preview, description }) => `  
@@ -17,7 +17,7 @@ const markup = galleryItems.map(({ original, preview, description }) => `
   </a>
   </div>`).join('');
 
-galletyRef.insertAdjacentHTML("beforeend", markup);
+galleryRef.insertAdjacentHTML("beforeend", markup);
 let instance;
 function onEscKeyPress(e) {
   console.log(e.code)
@@ -43,6 +43,6 @@ function onImgClick(e) {
 
 
 
-galletyRef.addEventListener('click', onImgClick);
+galleryRef.addEventListener('click', onImgClick);
 
 
